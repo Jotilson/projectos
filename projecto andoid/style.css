@@ -41,9 +41,9 @@
         font-size: 1.5em;
     }
     header h1{
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         font-family: var(--font-destaque);
-        font-size: 38px;
+        font-size: 50px;
         text-shadow: 3px 1px 8px black;;
         font-weight: 100;
        
@@ -52,7 +52,7 @@
        
       main h2{
             font-family: var(--font-android);
-            color: var(--cor2);
+            color: var(--cor4);
             font-weight: 100;
       }
       .sub{
@@ -61,15 +61,15 @@
         font-weight: 100;
        
     }
-    header p{
+    header > p{
         margin: auto;
-        padding-left: 15px;
-        padding-right: 20px;
-        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
         font-family: var(--font-destaque);
         text-shadow: 3px 1px 8px black;;
         font-weight: 100;
-        font-size: 15px;
+       
     }
     
     nav{
@@ -112,8 +112,7 @@
     main p{
         margin: 15px 0px 15px 0px;
         font-family: var(--font-paragrafo);
-        text-indent: 2em;
-        line-height: 2em;
+            line-height: 2em;
     }
     img{
         width: 100%;
