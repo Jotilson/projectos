@@ -1,0 +1,206 @@
+@charset "UTF-8";
+    
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+  @font-face {
+    font-family: 'Bebas';
+    src: url('fontes/BebasNeue-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Lobster';
+    src: url('fontes/Lobster-Regular.ttf') format('truetype');
+  }
+
+  :root{
+    --cor0: #ffffff;
+    --cor1: #A2EAB7; 
+    --cor2: #34AA67;
+    --cor3: #1F8C2C;
+    --cor4: #1A5C37;
+    --cor5: #09331b;
+    --font-padrao: arial,Verdana,sans-serif;
+    --font-destaque: 'Bebas';
+    --font-android: 'Android';
+    --font-paragrafo: Arial, sans-serif;
+  }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-color: var(--cor2);
+    }
+    header{
+        min-height: 150px;
+        padding-top: 20px;
+        background-image:  linear-gradient(to bottom, var(--cor2), var(--cor4));
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+    }
+    header h1{
+        padding-bottom: 15px;
+        font-family: var(--font-destaque);
+        font-size: 38px;
+        text-shadow: 3px 1px 8px black;;
+        font-weight: 100;
+       
+    }
+
+       
+      main h2{
+            font-family: var(--font-android);
+            color: var(--cor2);
+            font-weight: 100;
+      }
+      .sub{
+        font-family: var(--font-android);
+        background-image:  linear-gradient(to right, var(--cor1), transparent);
+        font-weight: 100;
+       
+    }
+    header p{
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        font-family: var(--font-destaque);
+        text-shadow: 3px 1px 8px black;;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    
+    nav{
+        background-color: #1b5a37;
+       padding-bottom: 2px;
+       
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding: 2px;
+        font-family: var(--font-padrao);
+        font-weight: 900;
+        border-radius: 5px;
+        
+    }
+    nav a:hover{
+  
+    background-color: #34AA67;
+    transition-duration: 1.2s;
+    color: blue;
+   
+    }
+    nav a:active{
+        color: red;
+    }
+
+    main{
+        max-width: 1000px;
+        min-width: 320px;
+        margin: auto;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 30px;
+        box-shadow: 3px 1px 8px black;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+       
+    }
+    main p{
+        margin: 15px 0px 15px 0px;
+        font-family: var(--font-paragrafo);
+        text-indent: 2em;
+        line-height: 2em;
+    }
+    img{
+        width: 100%;
+        margin: 10px;
+        margin-left: 0px ;
+    }
+    img.pq{
+        max-width: 400px;
+        display: block;
+        margin: auto;
+    }
+    a.externo{
+        text-decoration: none;
+       color: var(--cor5);
+    }
+     main a.externo:hover{
+         text-decoration: solid;
+         background-color: var(--cor1);
+         color: var(--cor5);
+         padding: 5px;
+         border-radius: 10px;
+         
+     }
+     a.externo::after{
+        content: '\00A0\00A0\1F517';
+     }
+     strong{
+        color: var(--cor4);
+        font-size: 20px;
+     }
+      aside{
+        background-color: var(--cor1);
+        border-radius: 10px;
+        box-shadow: 3px 1px 8px black;
+        
+      }
+      aside p{
+        padding: 20px;
+      }
+      h3{
+        background-color: var(--cor4);
+        padding: 5px;
+        color: white;
+       border-top-left-radius:  5px;
+       border-top-right-radius: 5px;
+      }
+       ul{
+        list-style-position: inside;
+        list-style-type: '\00A0\00A0\2714';
+        columns: 2;
+       }
+       div{
+        background-color: var(--cor5);
+      
+        margin: 32px -30px;
+        position: relative;
+        padding-bottom: 60%;
+       
+       }
+       iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+       
+       }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: solid;
+     color: lightgreen;
+     
+    }
+    footer a:active{
+    background-image:  linear-gradient(to bottom, yellow, red);
+    padding: 10px;
+    color: black;
+    }
+    footer a::after{
+        content: '\00A0\1F517';
+    }
